@@ -1,9 +1,23 @@
+import Error404 from "containers/errors/Error404";
+import Home from "containers/pages/Home";
+import store from "./store";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="text-grey-500 underline">
-      Hola
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          {/* Error Display */}
+          <Route path="*" element={<Error404 />} />
+
+          {/* Home */}
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 
