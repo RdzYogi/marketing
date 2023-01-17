@@ -10,7 +10,7 @@ function Navbar() {
   const [loading, setLoading] = useState(true)
 
   return (
-    <nav className='w-full py-4 top-0 fixed'>
+    <nav className='w-full py-4 bg-white shadow-xl top-0 fixed'>
         <div className=" px-4 sm:px-6">
         <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-12 px-2">
           <Link to='/' className="ml-4 mt-2">
