@@ -14,7 +14,6 @@ function Header() {
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                   Data for <span> </span>
-                  <div className="inline-flex" style={{color: '#ff561e', fontWeight: 'bold'}}>
                     <Typewriter
                       words={['products.', 'customers.', 'business.']}
                       loop={0}
@@ -25,7 +24,6 @@ function Header() {
                       delaySpeed={1000}
                       onType={handleType}
                     />
-                  </div>
                 </h1>
                 <ul className="flex gap-8 items-center justify-center py-12">
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
