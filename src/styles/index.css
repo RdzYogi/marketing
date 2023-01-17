@@ -5,3 +5,27 @@
 .active{
   @apply border-b-orange-500;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: -1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+  opacity: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9;
+  opacity: 10px;
+  border-radius: 10px;
+}
