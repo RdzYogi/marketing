@@ -10,6 +10,7 @@ import LogoCloud from 'components/home/LogoCloud'
 import BlogList from 'components/home/BlogList'
 
 function Home() {
+  window.scrollTo(0, 0);
   return (
     <Layout>
       <Navbar/>
