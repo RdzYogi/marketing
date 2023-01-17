@@ -25,29 +25,29 @@ function Header() {
                       onType={handleType}
                     />
                 </h1>
-                <ul className="flex gap-8 py-12">
+                <ul className="flex gap-8">
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
-                    <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
+                    <Link to="/" className="mt-6 text-2xl font-medium leading-8 text-gray-700 sm:text-center">
                       Item 1
                     </Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
-                    <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
+                    <Link to="/" className="mt-6 text-2xl font-medium leading-8 text-gray-700 sm:text-center">
                       Item 2
                     </Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
-                    <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
+                    <Link to="/" className="mt-6 text-2xl font-medium leading-8 text-gray-700 sm:text-center">
                       Item 3
                     </Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
-                    <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
+                    <Link to="/" className="mt-6 text-2xl font-medium leading-8 text-gray-700 sm:text-center">
                       Item 4
                     </Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
-                    <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
+                    <Link to="/" className="mt-6 text-2xl font-medium leading-8 text-gray-700 sm:text-center">
                       Item 5
                     </Link>
                   </li>
