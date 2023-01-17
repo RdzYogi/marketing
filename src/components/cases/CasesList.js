@@ -1,4 +1,5 @@
 import CaseCard from './CaseCard'
+import Carousel from '@itseasy21/react-elastic-carousel'
 
 function CasesList() {
   const posts = [
@@ -60,17 +61,28 @@ function CasesList() {
       },
     },
   ]
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 980, itemsToShow: 2, itemsToScroll: 2},
+    { width: 1650, itemsToShow: 3, itemsToScroll: 2 },
+  ]
   return (
-    <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+    <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28">
         <div className="absolute inset-0">
           <div className="h-1/3 bg-white sm:h-2/3" />
         </div>
         <div className="relative mx-auto max-w-full">
-          <div className="mx-auto xl:mx-12 mt-12 grid max-w-lg gap-40 lg:max-w-none lg:grid-cols-2">
+          <Carousel
+            itemsToShow={3}
+            itemsToScroll={3}
+            itemPadding={[0, 48]}
+            breakPoints={breakPoints}
+          >
             {posts.map((post,index) => (
               <CaseCard index={index} data={post}/>
             ))}
-          </div>
+          </Carousel>
         </div>
       </div>
   )
