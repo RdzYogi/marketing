@@ -9,10 +9,10 @@ function Header() {
   return (
     <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl xl-pt-40 pt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div className="mx-auto max-w-full xl:mx-12 xl-pt-40 lg:pt-40 pt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
               <div>
-                <h1 className="text-4xl font-bold tracking-tight pb-24 sm:text-center sm:text-7xl">
+                <h1 className="text-4xl font-bold tracking-tight pb-16 sm:text-7xl">
                   Data for <span> </span>
                     <Typewriter
                       words={['products.', 'customers.', 'business.']}
@@ -25,7 +25,7 @@ function Header() {
                       onType={handleType}
                     />
                 </h1>
-                <ul className="flex gap-8 items-center justify-center py-12">
+                <ul className="flex gap-8 py-12">
                   <li className="inline-flex border-b-2 border-transparent hover:border-orange-button transition duration-300 ease-in-out">
                     <Link to="/" className="mt-6 text-lg font-medium leading-8 text-gray-700 sm:text-center">
                       Item 1
