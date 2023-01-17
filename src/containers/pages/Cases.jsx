@@ -5,6 +5,7 @@ import Header from 'components/cases/Header'
 import CasesList from 'components/cases/CasesList'
 
 function Cases() {
+  window.scrollTo(0, 0);
   return (
     <Layout>
       <Navbar/>
