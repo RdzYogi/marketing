@@ -7,6 +7,7 @@ import TestStats from 'components/about/TestStats'
 import Images from 'components/about/Images'
 import OurClients from 'components/about/OurClients'
 import LogoCloud from 'components/home/LogoCloud'
+import Features from 'components/about/Features'
 
 
 function About() {
@@ -22,6 +23,7 @@ function About() {
         <Images/>
         <OurClients/>
         <LogoCloud/>
+        <Features/>
       </div>
       <Footer/>
     </Layout>
