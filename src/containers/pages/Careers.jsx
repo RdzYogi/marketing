@@ -4,6 +4,7 @@ import Footer from 'components/navigation/Footer'
 import { useEffect } from 'react'
 import Header from 'components/careers/Header'
 import Testimonial from 'components/careers/Testimonial'
+import LogoCloud from 'components/home/LogoCloud'
 
 function Careers() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function Careers() {
       <div className='pt-28'>
         <Header/>
         <Testimonial/>
+        <LogoCloud/>
       </div>
       <Footer/>
     </Layout>
