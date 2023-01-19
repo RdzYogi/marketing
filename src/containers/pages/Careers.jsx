@@ -6,6 +6,7 @@ import Header from 'components/careers/Header'
 import Testimonial from 'components/careers/Testimonial'
 import LogoCloud from 'components/home/LogoCloud'
 import Features from 'components/careers/Features'
+import PositionsList from 'components/careers/PositionsList'
 
 function Careers() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function Careers() {
         </div>
         <LogoCloud/>
         <Features/>
+        <PositionsList/>
       </div>
       <Footer/>
     </Layout>
