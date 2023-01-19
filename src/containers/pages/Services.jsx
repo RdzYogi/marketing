@@ -70,7 +70,7 @@ const posts_software = [
 ]
 const posts_design = [
   {
-    id:'1234-qert',
+    id:'1234-aert',
     title: 'Boost your conversion rate',
     img: coding_img,
     href: '#',
@@ -90,7 +90,7 @@ const posts_design = [
     },
   },
   {
-    id:'1234-qwrt',
+    id:'1234-awrt',
     title: 'How to use search engine optimization to drive sales',
     img: coding_img,
     href: '#',
@@ -110,7 +110,7 @@ const posts_design = [
     },
   },
   {
-    id:'1234-wwrt',
+    id:'1234-awrt',
     img: coding_img,
     title: 'Improve your customer experience',
     href: '#',
