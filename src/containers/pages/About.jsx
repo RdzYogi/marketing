@@ -8,6 +8,8 @@ import Images from 'components/about/Images'
 import OurClients from 'components/about/OurClients'
 import LogoCloud from 'components/home/LogoCloud'
 import Features from 'components/about/Features'
+import Team from 'components/about/Team'
+import CTA from 'components/about/CTA'
 
 
 function About() {
@@ -24,6 +26,8 @@ function About() {
         <OurClients/>
         <LogoCloud/>
         <Features/>
+        <Team/>
+        <CTA/>
       </div>
       <Footer/>
     </Layout>
