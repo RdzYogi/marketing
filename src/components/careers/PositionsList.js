@@ -41,7 +41,7 @@ const applications = [
 
 function PositionsList() {
   return (
-    <div className='max-w-full mx-12 bg-white'>
+    <div className='max-w-full mx-auto lg:mx-12 bg-white'>
       <h2 className='text-5xl font-semibold text-gray-900 pb-8'> Open Positions</h2>
       <p className='text-2xl font-regular leading-10 text-gray-900 max-w-5xl'>Sit amet velit occaecat enim sit amet velit aliquip incididunt aliqua non mollit. Sunt nostrud consequat elit dolor dolore aliqua tempor qui culpa proident incididunt voluptate. Voluptate nulla reprehenderit non qui nisi incididunt laborum. Adipisicing minim exercitation sint aute esse elit culpa qui amet dolor velit. </p>
       <div className="overflow-hidden bg-white shadow sm:rounded-md py-12">

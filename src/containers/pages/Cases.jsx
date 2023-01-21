@@ -4,6 +4,7 @@ import Footer from 'components/navigation/Footer'
 import Header from 'components/cases/Header'
 import CasesList from 'components/cases/CasesList'
 import { useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 function Cases() {
   useEffect(() => {
@@ -11,6 +12,27 @@ function Cases() {
   }, [])
   return (
     <Layout>
+      <Helmet>
+        <title>Marketing | Cases </title>
+        <meta name="description" content="Here is where you insert description for google search results" />
+        <meta name="keywords" content="Here is where you insert keywords for google search results" />
+        <meta name="author" content="Here is where you insert author name" />
+        <meta name="publisher" content="Here is where you insert publisher name" />
+        {/* robots = bots that can scan the website */}
+        <meta name="robots" content="all" />
+        <link rel="canonical" href="Here is where you put the link to the website domain name"/>
+        {/* Social media tags */}
+        <meta property="og:title" content="Here is where you put the title of the website" />
+        <meta property="og:description" content="Here is where you put the description of the website" />
+        <meta property="og:image" content="Here is where you put the image of the website" />
+        <meta property="og:url" content="Here is where you put the link to the website domain name" />
+
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="Here is where you put the description/image of the website" />
+        <meta name="twitter:title" content="Here is where you put the title of the website" />
+        <meta name="twitter:description" content="Here is where you put the description of the website" />
+        <meta name="twitter:image" content="Here is where you put an image of the website" />
+      </Helmet>
       <Navbar/>
       <div className='pt-28'>
         <Header/>
