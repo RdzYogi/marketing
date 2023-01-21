@@ -38,7 +38,7 @@ const features = [
 export default function Features() {
   return (
     <div className="bg-white">
-      <div className="mx-12 max-w-full py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+      <div className="mx-auto lg:mx-12 max-w-full py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">All-in-one platform</h2>
           <p className="mt-4 text-lg text-gray-500">
