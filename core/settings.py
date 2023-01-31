@@ -34,7 +34,8 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-
+    'apps.blog',
+    'apps.category',
 ]
 
 THIRD_PARTY_APPS = [
@@ -46,17 +47,21 @@ THIRD_PARTY_APPS = [
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
-CKEDITOR_UPLOAD_PATH = 'media/'
+CKEDITOR_UPLOAD_PATH = '/media/'
 CKEDITOR_CONFIGS = {
+    # 'default': {
+    #     'toolbar': 'Custom',
+    #     'toolbar_Custom': [
+    #         ['Bold', 'Italic', 'Underline'],
+    #         ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+    #         ['Link', 'Unlink'],
+    #         ['RemoveFormat', 'Source']
+    #     ],
+    #     'autoParagraph': False,
+    # }
     'default': {
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink'],
-            ['RemoveFormat', 'Source']
-        ],
-        'autoParagraph': False,
+        'toolbar': 'full',
+        'autoParagraph': False
     }
 }
 
@@ -153,7 +158,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.isAuthenticatedOrReadOnly',
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
 }
 
