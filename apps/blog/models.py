@@ -34,7 +34,7 @@ class Post(models.Model):
         return views
 
 class ViewCount(models.Model):
-    category = models.ForeignKey(Post, related_name='blogpost_view_count', on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, related_name='blogpost_view_count', on_delete=models.CASCADE)
     ip_address = models.CharField(max_length=255)
 
     def __str__(self):
